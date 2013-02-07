@@ -1,3 +1,64 @@
-header._header {
+header#mw_header {
+  width:640px;
+  height:211px;
+  position:relative;
+  background-image:image-url("ls-header.jpg");
   
+._icons_bar{
+position: absolute;
+top: 50px;
+right: 65px;
+opacity: .8;
+
+> div {
+display: inline-block;
+padding-top: 3px;
+margin-left:40px;
+}
+}
+ 
+.sprites-white-cart{
+height: 28px;
+} 
+
+.sprites-white-info{
+margin-left: 55px !important;
+} 
+
+#mw_logo{
+position:absolute;
+top:0px;
+left:0px;
+}
+
+._search{
+position:absolute;
+bottom:25px;
+text-align:center;
+
+>div{
+display:inline;
+margin-left: 20px;
+.form-text{
+width:480px;
+height:40px;
+border-radius: 10px;
+text-align:center;
+font-size:24px;
+}
+}
+.form-submit{
+color:#fff;
+width:80px;
+height:40px;
+border-radius: 10px;
+@include background(linear-gradient(#9d02e2, #5a017f));
+font-size:24px;
+text-transform:uppercase;
+margin-left:15px;
+cursor:pointer;
+border-color:#000;
+}
+}
+
 }

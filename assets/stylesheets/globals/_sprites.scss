@@ -1,7 +1,7 @@
 $sprites-url: url("/_moovweb_local_assets_/images/sprites.png");
 
-$sprites-width: 36px;
-$sprites-height: 329px;
+$sprites-width: 38px;
+$sprites-height: 421px;
 
 $sprites-account-x: 0px;
 $sprites-account-y: 0px;
@@ -23,40 +23,55 @@ $sprites-blackPlus-y: -107px;
 $sprites-blackPlus-width: 36px;
 $sprites-blackPlus-height: 36px;
 
+$sprites-blackinfo-x: 0px;
+$sprites-blackinfo-y: -143px;
+$sprites-blackinfo-width: 36px;
+$sprites-blackinfo-height: 35px;
+
+$sprites-blacksearch-x: 0px;
+$sprites-blacksearch-y: -178px;
+$sprites-blacksearch-width: 36px;
+$sprites-blacksearch-height: 35px;
+
 $sprites-blue-arrow-right-x: 0px;
-$sprites-blue-arrow-right-y: -143px;
+$sprites-blue-arrow-right-y: -213px;
 $sprites-blue-arrow-right-width: 36px;
 $sprites-blue-arrow-right-height: 36px;
 
 $sprites-calendar-x: 0px;
-$sprites-calendar-y: -179px;
+$sprites-calendar-y: -249px;
 $sprites-calendar-width: 36px;
 $sprites-calendar-height: 35px;
-
-$sprites-info-x: 0px;
-$sprites-info-y: -214px;
-$sprites-info-width: 36px;
-$sprites-info-height: 35px;
-
-$sprites-search-x: 0px;
-$sprites-search-y: -249px;
-$sprites-search-width: 36px;
-$sprites-search-height: 35px;
 
 $sprites-white-arrow-right-x: 0px;
 $sprites-white-arrow-right-y: -284px;
 $sprites-white-arrow-right-width: 10px;
 $sprites-white-arrow-right-height: 15px;
 
+$sprites-white-cart-x: 0px;
+$sprites-white-cart-y: -299px;
+$sprites-white-cart-width: 36px;
+$sprites-white-cart-height: 30px;
+
+$sprites-white-info-x: 0px;
+$sprites-white-info-y: -329px;
+$sprites-white-info-width: 38px;
+$sprites-white-info-height: 25px;
+
 $sprites-white-minus-x: 0px;
-$sprites-white-minus-y: -299px;
+$sprites-white-minus-y: -354px;
 $sprites-white-minus-width: 12px;
 $sprites-white-minus-height: 15px;
 
 $sprites-white-plus-x: 0px;
-$sprites-white-plus-y: -314px;
+$sprites-white-plus-y: -369px;
 $sprites-white-plus-width: 12px;
 $sprites-white-plus-height: 15px;
+
+$sprites-white-search-x: 0px;
+$sprites-white-search-y: -384px;
+$sprites-white-search-width: 36px;
+$sprites-white-search-height: 37px;
 
 @mixin sprites-account() {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px 0px;
@@ -82,25 +97,25 @@ $sprites-white-plus-height: 15px;
   height: 36px;
 }
 
-@mixin sprites-blue-arrow-right() {
+@mixin sprites-blackinfo() {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -143px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin sprites-blacksearch() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -178px;
+  width: 36px;
+  height: 35px;
+}
+
+@mixin sprites-blue-arrow-right() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -213px;
   width: 36px;
   height: 36px;
 }
 
 @mixin sprites-calendar() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -179px;
-  width: 36px;
-  height: 35px;
-}
-
-@mixin sprites-info() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -214px;
-  width: 36px;
-  height: 35px;
-}
-
-@mixin sprites-search() {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -249px;
   width: 36px;
   height: 35px;
@@ -112,16 +127,34 @@ $sprites-white-plus-height: 15px;
   height: 15px;
 }
 
-@mixin sprites-white-minus() {
+@mixin sprites-white-cart() {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -299px;
+  width: 36px;
+  height: 30px;
+}
+
+@mixin sprites-white-info() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -329px;
+  width: 38px;
+  height: 25px;
+}
+
+@mixin sprites-white-minus() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -354px;
   width: 12px;
   height: 15px;
 }
 
 @mixin sprites-white-plus() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -314px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -369px;
   width: 12px;
   height: 15px;
+}
+
+@mixin sprites-white-search() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -384px;
+  width: 36px;
+  height: 37px;
 }
 
 .sprites-account {
@@ -148,25 +181,25 @@ $sprites-white-plus-height: 15px;
   height: 36px;
 }
 
-.sprites-blue-arrow-right {
+.sprites-blackinfo {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -143px;
+  width: 36px;
+  height: 35px;
+}
+
+.sprites-blacksearch {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -178px;
+  width: 36px;
+  height: 35px;
+}
+
+.sprites-blue-arrow-right {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -213px;
   width: 36px;
   height: 36px;
 }
 
 .sprites-calendar {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -179px;
-  width: 36px;
-  height: 35px;
-}
-
-.sprites-info {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -214px;
-  width: 36px;
-  height: 35px;
-}
-
-.sprites-search {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -249px;
   width: 36px;
   height: 35px;
@@ -178,14 +211,32 @@ $sprites-white-plus-height: 15px;
   height: 15px;
 }
 
-.sprites-white-minus {
+.sprites-white-cart {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -299px;
+  width: 36px;
+  height: 30px;
+}
+
+.sprites-white-info {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -329px;
+  width: 38px;
+  height: 25px;
+}
+
+.sprites-white-minus {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -354px;
   width: 12px;
   height: 15px;
 }
 
 .sprites-white-plus {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -314px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -369px;
   width: 12px;
   height: 15px;
+}
+
+.sprites-white-search {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -384px;
+  width: 36px;
+  height: 37px;
 }

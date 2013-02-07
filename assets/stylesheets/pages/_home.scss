@@ -6,7 +6,7 @@
  > a, > div{
  color:#fff;  
 border-bottom: #000;
-border-top: 1px solid #ddd;
+border-top: 1px solid #000;
 @include background(linear-gradient(#9d02e2, #5a017f));
 background-position-x: right;
 display: block;
@@ -23,7 +23,7 @@ margin:0px !important;
 font-weight:bold;
 color:#fff;
 border-bottom: #000;
-border-top: 1px solid #ddd;
+border-top: 1px solid #000;
 background: #320047;
 background-position-x: right;
 display: block;
@@ -39,7 +39,7 @@ padding: 10px;
 > a, >div{
 color:#fff;
 border-bottom: #000;
-border-top: 1px solid #ddd;
+border-top: 1px solid #000;
 @include background(linear-gradient(#5d5c58, #3a3937));
 background-position-x: right;
 display: block;
@@ -56,7 +56,7 @@ margin:0px !important;
 font-weight:bold;
 color:#fff;
 border-bottom: #000;
-border-top: 1px solid #ddd;
+border-top: 1px solid #000;
 background: #320047;
 background-position-x: right;
 display: block;

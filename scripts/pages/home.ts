@@ -6,6 +6,9 @@ table_dump(".//table")
 remove(".//div[@id='headlines']")
 remove(".//div[@id='shopcontent']")
 remove(".//div[@class='promos']")
+$$("#rightcolumn"){
+add_class("_hidden")
+}
 
 $$("#shop_menu > div"){
 
@@ -58,4 +61,7 @@ $$("#bottommenu"){
 $$("h2"){
 add_class("_navhome")
 }
+remove(".//div[@id='logo']")
+remove(".//div[@id='mainnav']")
+remove(".//div[@id='header_right']")
 }
