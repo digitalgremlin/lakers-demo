@@ -2,4 +2,79 @@
 // Scope that in each file at the start
 ._home {
   
+  ._category{
+ > a, > div{
+ color:#fff;  
+border-bottom: #000;
+border-top: 1px solid #ddd;
+@include background(linear-gradient(#9d02e2, #5a017f));
+background-position-x: right;
+display: block;
+font-size: 16px;
+line-height: 1;
+text-decoration: none;
+text-transform: capitalize;
+padding: 10px;
+margin:0px !important;
+}
+}
+._subcategory{
+> a{
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #ddd;
+background: #320047;
+background-position-x: right;
+display: block;
+font-size: 16px;
+line-height: 1;
+text-decoration: none;
+text-transform: capitalize;
+padding: 10px;
+}
+}
+
+._categoryfooter {
+> a, >div{
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #ddd;
+@include background(linear-gradient(#5d5c58, #3a3937));
+background-position-x: right;
+display: block;
+font-size: 16px;
+line-height: 1;
+text-decoration: none;
+text-transform: capitalize;
+padding: 10px;
+margin:0px !important;
+}
+}
+._subcategoryfooter{
+> a{
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #ddd;
+background: #320047;
+background-position-x: right;
+display: block;
+font-size: 16px;
+line-height: 1;
+text-decoration: none;
+text-transform: capitalize;
+padding: 10px;
+}
+}
+._listhome{
+list-style:none;
+padding:0px;
+margin:0px;
+}
+
+._navhome{
+margin:0px;
+cursor:pointer;
+}
 }
