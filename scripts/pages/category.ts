@@ -1,12 +1,15 @@
 
 $$("body") {
 add_class("_category")
+remove(".//br")
+table_dump(".//table")
 remove(".//div[@id='header']")
-
-$$("#bottommenu > div"){
+$$("#bottommenu"){
+add_class("_bottommenu")
+$$(" > div"){
 	add_class("_baller2")
 }
-
+}
 $$("#mainnav .content .menu .first"){
 attribute("class", "_topnav")
 }
@@ -56,13 +59,14 @@ $$(".item-list"){
 add_class("_paging")
 }
 
+$$("#mainarea"){
+insert_after("div", class: "_clear")
+}
 $$("#mainbodysub .title"){
 add_class("_section_title")
 }
 
-$$("#mainbodysub"){
-$var2 = fetch("./h2/text()")
-}
+
 
 $$("#mainnav"){
 insert_after("div", class: "_ditto", "Shop by Player  >>  Dwight Howard" )
@@ -70,7 +74,7 @@ insert_after("div", class: "_ditto", "Shop by Player  >>  Dwight Howard" )
 }
 
 
-$$("#bottommenu"){
+$$("._bottommenu"){
 	$$("._baller2") {
 	attribute("data-ur-set", "toggler")
 	$$("h2"){

@@ -1,8 +1,101 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
 ._content {
+background:#000;
+._clear{
+clear:both;
+}
+._shop{
+background:#fff;
+}
+.menu{
+margin:0px !important;
+list-style:none !important;
+padding:0px;
+}
+._topnav{
+> a{
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
+position:relative;
+text-align:left;
+font-size:24px;
+._icon_category {
+@include toggler_btn_icon3;
+@extend .sprites-white-plus;
+}
+}
+}
 
+._item_title{
+margin-top:0px !important;
+font-size:16px;
+color:#666;
+text-align:left;
+}
+._item_price{
+color:#04af01;
+text-align:left;
+font-size:24px;
+}
 
+._ditto{
+font-size:8px;
+color:#9401d5;
+font-weight:bold;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
+position:relative;
+text-align:left;
+text-transform:uppercase;
+font-size:12px;
+}
 
+._categoryfooter {
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+@include background(linear-gradient(#5d5c58, #3a3937));
+@include bar_inner_base;
+padding:0px ;
+margin:0px !important;
+cursor:pointer;
+
+> a{
+ position:relative;
+ @include bar_inner_base;
+} >div {
+text-align:left;
+ position:relative;
+ @include bar_inner_base;
+ ._icon_category {
+@include toggler_btn_icon;
+@extend .sprites-white-plus;
+}
+}
+
+}
+._subcategoryfooter{
+> a{
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
+position:relative;
+text-align:left;
+._icon_subcategory {
+@include toggler_btn_icon2;
+@extend .sprites-white-arrow-right;
+}
+}
+}
 
 }

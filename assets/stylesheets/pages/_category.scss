@@ -3,6 +3,9 @@
 ._category {
 background:#000;
 
+._clear{
+clear:both;
+}
 .menu{
 margin:0px !important;
 list-style:none !important;
@@ -27,6 +30,10 @@ font-size:24px;
 }
 }
 
+._bottommneu{
+clear:both;
+margin-top:20px;
+}
 ._categoryfooter {
 color:#fff;
 border-bottom: #000;
@@ -98,6 +105,7 @@ background:#fff;
 ._rows{
 clear:both;
 border-top:5px solid #000;
+min-height:140px;
 }
 ._item_image{
 
