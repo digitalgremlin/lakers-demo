@@ -3,3 +3,33 @@
 $base-font-size: 13px;
 $base-line-height: 24px;
 @include establish-baseline();
+
+@mixin bar_inner_base {
+background-position-x: right;
+display: block;
+font-size: 16px;
+line-height: 1;
+text-decoration: none;
+text-transform: capitalize;
+padding: 10px;
+}
+@mixin toggler_btn_icon{
+position: absolute;
+display: inline-block;
+vertical-align: middle;
+right: 20px;
+top: 10px;
+height: 15px;
+width: 12px;
+overflow:hidden;
+}
+@mixin toggler_btn_icon2{
+position: absolute;
+display: inline-block;
+vertical-align: middle;
+right: 18px;
+top: 10px;
+height: 13px;
+width: 14px;
+overflow:hidden;
+}

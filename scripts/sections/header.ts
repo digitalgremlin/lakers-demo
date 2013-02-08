@@ -21,6 +21,10 @@ insert("img", src: asset("images/logo.jpg"))
 $$(".container-inline"){
 move_to("//header[@id='mw_header']", "bottom")
 add_class("_search")
+$$(".form-text"){
+attribute("value", "Search")
 }
+}
+
 
  }

@@ -24,18 +24,37 @@ $$("ul"){
 add_class("_listhome")
 }
 
+$$("#container"){
+insert_top("div", class: "_banner_bar"){
+insert("div", class: "_facebook_social"){
+inject_top("<a href='http://www.facebook.com/pages/LakersStorecom/139157679446876' >"){
+
+insert("img", src: asset("images/ls-facebook-icon.png")){
+add_class("_social")
+}
+}
+
+}
+}
+}
 $$("#shop_menu"){
 	$$(".baller1") {
 	attribute("data-ur-set", "toggler")
 	$$("h2"){
 	attributes(class: "_category", 
 	data-ur-toggler-component: "button")
-	wrap_text_children("div")
+	wrap_text_children("div"){
+	insert("span", class: "_icon_category")
+	}
 	}
 		$$("ul") {
 			attribute("data-ur-toggler-component", "content")
 	$$("> li") {
 	attribute("class", "_subcategory")
+	$$("> a"){
+	
+	insert_bottom("span", class: "_icon_subcategory")
+	}	
 	}
 		}
 	}
@@ -47,12 +66,18 @@ $$("#bottommenu"){
 	$$("h2"){
 	attributes(class: "_categoryfooter",
 	data-ur-toggler-component: "button")
-	wrap_text_children("div")
+	wrap_text_children("div"){
+	insert("span", class: "_icon_category")
+	}
 	}
 		$$("ul") {		
 		attribute("data-ur-toggler-component", "content")
 	$$("> li") {
 	attribute("class", "_subcategory")
+	$$("> a"){
+	
+	insert_bottom("span", class: "_icon_subcategory")
+	}
 	}
 		}
 	}
@@ -64,4 +89,14 @@ add_class("_navhome")
 remove(".//div[@id='logo']")
 remove(".//div[@id='mainnav']")
 remove(".//div[@id='header_right']")
+
+$$("#bottom_col2 ul"){
+add_class("_other")
+}
+$$("#bottom_col3 ._listhome > li"){
+move_to("//*[contains(concat(' ', @class, ' '), ' _other ')]")
+}
+$$("#bottom_col3"){
+remove()
+}
 }
