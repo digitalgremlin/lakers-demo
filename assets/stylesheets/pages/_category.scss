@@ -1,35 +1,15 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
-._home {
+._category {
 background:#000;
- 
-  ._category{
-border-bottom: #000;
-border-top: 1px solid #000;
-@include background(linear-gradient(#9d02e2, #5a017f)); 
-color:#fff; 
-@include bar_inner_base;
+
+.menu{
 margin:0px !important;
-
- > a{
- position:relative;
- @include bar_inner_base;
-
- }
- &[data-ur-toggler-component="button"]{ 
-  > div{
-   text-align:left;
- position:relative;
- @include bar_inner_base; 
- ._icon_category {
-@include toggler_btn_icon;
-@extend .sprites-white-plus;
-}
- }  
-}
+list-style:none !important;
+padding:0px;
 }
 
-._subcategory{
+._topnav{
 > a{
 font-weight:bold;
 color:#fff;
@@ -39,9 +19,10 @@ background: #320047;
 @include bar_inner_base;
 position:relative;
 text-align:left;
-._icon_subcategory {
-@include toggler_btn_icon2;
-@extend .sprites-white-arrow-right;
+font-size:24px;
+._icon_category {
+@include toggler_btn_icon3;
+@extend .sprites-white-plus;
 }
 }
 }
@@ -52,7 +33,10 @@ border-bottom: #000;
 border-top: 1px solid #000;
 @include background(linear-gradient(#5d5c58, #3a3937));
 @include bar_inner_base;
+padding:0px ;
 margin:0px !important;
+cursor:pointer;
+
 > a{
  position:relative;
  @include bar_inner_base;
@@ -83,39 +67,66 @@ text-align:left;
 }
 }
 }
-._listhome{
-list-style:none;
-padding:0px;
-margin:0px;
-}
 
-._navhome{
-margin:0px;
-cursor:pointer;
-padding:0px;
-}
-
-._banner_bar{
-width:300px;
-height:180px;
+._ditto{
+font-size:8px;
+color:#9401d5;
+font-weight:bold;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
 position:relative;
-background-image:image-url("ls-bannerBg.jpg");
-background-repeat:no-repeat;
+text-align:left;
+text-transform:uppercase;
+font-size:12px;
+}
 
-._facebook_social{
-width:300px;
-height:51px;
-position:absolute;
-bottom:0px;
+._section_title{
+color:#9401d5;
+text-transform:uppercase;
+font-weight:bold;
+background:#000;
+margin:0px;
+padding:15px;
+}
 
-._social{
-position:absolute;
-width:49px;
-right:6px;
-bottom:-2px;
+
+._shop{
+background:#fff;
+}
+._rows{
+clear:both;
+border-top:5px solid #000;
+}
+._item_image{
+
+background:#fff;
+}
+._item_image .field-content{
+position:relative;
+clear:both;
+color:#666;
+
+img{
+float:left;
+margin-right: 20px;
+min-height:75px;
+}
+._item_title a{
+color:#666;
+}
+._item_price {
+font-weight:bold;
+font-size:16px;
 }
 }
+
+._paging{
+display:none;
+clear:both;
 }
+
 
 
 }

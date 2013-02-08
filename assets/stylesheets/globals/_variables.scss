@@ -33,3 +33,13 @@ height: 13px;
 width: 14px;
 overflow:hidden;
 }
+@mixin toggler_btn_icon3{
+position: absolute;
+display: inline-block;
+vertical-align: middle;
+right: 20px;
+top: 15px;
+height: 15px;
+width: 12px;
+overflow:hidden;
+}

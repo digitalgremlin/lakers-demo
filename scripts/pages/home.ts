@@ -12,12 +12,12 @@ add_class("_hidden")
 
 $$("#shop_menu > div"){
 
-	add_class("baller1")
+	add_class("_baller1")
 }
 
 $$("#bottommenu > div"){
 
-	add_class("baller2")
+	add_class("_baller2")
 }
 
 $$("ul"){
@@ -38,7 +38,7 @@ add_class("_social")
 }
 }
 $$("#shop_menu"){
-	$$(".baller1") {
+	$$("._baller1") {
 	attribute("data-ur-set", "toggler")
 	$$("h2"){
 	attributes(class: "_category", 
@@ -61,7 +61,7 @@ $$("#shop_menu"){
 }
 
 $$("#bottommenu"){
-	$$(".baller2") {
+	$$("._baller2") {
 	attribute("data-ur-set", "toggler")
 	$$("h2"){
 	attributes(class: "_categoryfooter",
@@ -73,7 +73,7 @@ $$("#bottommenu"){
 		$$("ul") {		
 		attribute("data-ur-toggler-component", "content")
 	$$("> li") {
-	attribute("class", "_subcategory")
+	attribute("class", "_subcategoryfooter")
 	$$("> a"){
 	
 	insert_bottom("span", class: "_icon_subcategory")

@@ -1,5 +1,5 @@
 $$('body') {
- add_class("_bodynew")
+ 
  $$("#full"){
  add_class("_header")
  }
