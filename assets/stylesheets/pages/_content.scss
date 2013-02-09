@@ -31,6 +31,9 @@ font-size:24px;
 }
 }
 
+._product_head{
+padding:5px;
+
 ._item_title{
 margin-top:0px !important;
 font-size:16px;
@@ -41,8 +44,9 @@ text-align:left;
 color:#04af01;
 text-align:left;
 font-size:24px;
+margin-bottom:5px;
 }
-
+}
 ._ditto{
 font-size:8px;
 color:#9401d5;
@@ -55,6 +59,82 @@ position:relative;
 text-align:left;
 text-transform:uppercase;
 font-size:12px;
+}
+
+._product_image {
+
+> a{
+color:#666;
+text-decoration:underline;
+
+> img{
+border:2px solid #666;
+width:200px;
+height:267px;
+}
+}
+._product_image + a{
+
+}
+}
+._meta{
+ul{
+list-style:none;
+text-align:left;
+li{
+color:#666;
+display:inline;
+a{
+color:#666;
+text-decoration:underline;
+
+}
+}
+}
+}
+
+._product_body{
+padding:5px;
+> p {
+text-align:left;
+
+}
+> ul {
+text-align:left;
+list-style-type:dash;
+}
+}
+._share{
+position:relative;
+border-top: 2px solid #000;
+text-align:left;
+padding-left:5px;
+color:#666;
+
+._share_bar{
+
+> div {
+display: inline-block;
+padding-top: 3px;
+margin-left:15px;
+height:27px;
+}
+
+._first{
+margin-left:0px;
+}
+}
+}
+
+._add_to_cart{
+
+> div {
+border-top:2px solid #000;
+border-bottom:2px solid #000;
+}
+.attributes{
+border-bottom:none;
+}
 }
 
 ._categoryfooter {
