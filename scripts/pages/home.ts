@@ -99,4 +99,6 @@ move_to("//*[contains(concat(' ', @class, ' '), ' _other ')]")
 $$("#bottom_col3"){
 remove()
 }
+
+
 }

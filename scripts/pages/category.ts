@@ -69,8 +69,13 @@ add_class("_section_title")
 
 
 $$("#mainnav"){
-insert_after("div", class: "_ditto", "Shop by Player  >>  Dwight Howard" )
+insert_after("div", class: "_ditto" )
 
+}
+
+$$("._ditto"){
+
+insert_javascript(" breadcrumbs();")
 }
 
 
@@ -96,6 +101,7 @@ $$("._bottommenu"){
 		}
 	}
 }
+
 }
 
 

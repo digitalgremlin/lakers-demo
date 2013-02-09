@@ -34,7 +34,9 @@ remove()
 }
 
 $$("#mainnav"){
-insert_after("div", class: "_ditto", "Shop by Player  >>  Dwight Howard" )
+insert_after("div", class: "_ditto"){
+insert_javascript("breadcrumbs();")
+}
 
 }
 $$("#mainarea"){
