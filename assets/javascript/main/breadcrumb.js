@@ -3,7 +3,11 @@ Copyright Justin Whitford 2001.
   http://www.whitford.id.au/
 Perpetual, non-exclusive license to use this code is granted
 on the condition that this notice is left in tact.
-*/
+/*
+ * Bread crumbs generator 
+ * This is a function that generates breadcrumbs.
+ *
+ */
   function breadcrumbs(){
     sURL = new String;
     bits = new Object;
