@@ -14,17 +14,19 @@ margin:0px !important;
  > a{
  position:relative;
  @include bar_inner_base;
-
  }
+ 
  &[data-ur-toggler-component="button"]{ 
   > div{
    text-align:left;
  position:relative;
  @include bar_inner_base; 
+ 
  ._icon_category {
 @include toggler_btn_icon;
 @extend .sprites-white-plus;
 }
+
  }  
 }
 }
@@ -39,6 +41,7 @@ background: #320047;
 @include bar_inner_base;
 position:relative;
 text-align:left;
+
 ._icon_subcategory {
 @include toggler_btn_icon2;
 @extend .sprites-white-arrow-right;

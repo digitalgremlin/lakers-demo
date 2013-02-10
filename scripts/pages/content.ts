@@ -13,12 +13,30 @@ $$("#mainnav .content .menu .first"){
 attribute("class", "_topnav")
 }
 
-$$("._topnav a"){
-inner() {
-    replace("Home", "Site Menu") 
-  }
-  insert_bottom("span", class: "_icon_category")
+$$("#mainnav"){
+insert_after("div", class: "_ditto" )
+
 }
+
+$$("._ditto"){
+ inject("<a href='/' >Shop Main </a> &nbsp;>>")
+}
+
+$$("._topnav"){
+inner("<div>")
+attribute("data-ur-set", "toggler")
+$$("div"){
+inject("Site Menu")
+attribute("data-ur-toggler-component", "button")
+insert_bottom("span", class: "_icon_category")
+}
+move_here("//div[contains(concat(' ', @class, ' '), ' _ditto ')]"){
+insert_bottom("span", class: "_icon_subcategory")
+wrap("span"){
+attribute("data-ur-toggler-component", "content")
+}
+}
+} 
 
 $$("#mainnav .content .menu"){
 remove("./li[contains(concat(' ', @class, ' '), ' leaf ')]")
@@ -33,12 +51,9 @@ $$(".promos"){
 remove()
 }
 
-$$("#mainnav"){
-insert_after("div", class: "_ditto"){
-insert_javascript("breadcrumbs();")
-}
 
-}
+
+
 $$("#mainarea"){
 add_class("_shop")
 }
@@ -111,6 +126,38 @@ insert_top("li", "Tags:")
 
 $$("#cartButtons .add-to-cart form > *:first-child"){
 add_class("_add_to_cart")
+}
+
+
+$$("._add_to_cart .attribute-1 > div"){
+add_class("_get_low")
+}
+
+$$("._get_low"){
+inject_bottom(read("sizes.html"))
+remove("select")
+$$("label"){
+inner() {
+    replace("Adult Sizes:", "Select Size:") 
+  }
+}
+}
+
+$$("#edit-qty-wrapper"){
+add_class("_get_down")
+}
+
+$$("._get_down"){
+inject_bottom(read("quantity.html"))
+remove("input")
+}
+
+$$("#edit-wishlist"){
+remove()
+}
+
+$$("input.node-add-to-cart"){
+add_class("_take_that")
 }
 
 $$("#bottommenu"){

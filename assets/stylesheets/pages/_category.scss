@@ -6,6 +6,7 @@ background:#000;
 ._clear{
 clear:both;
 }
+
 .menu{
 margin:0px !important;
 list-style:none !important;
@@ -13,20 +14,48 @@ padding:0px;
 }
 
 ._topnav{
-> a{
+position:relative;
+
+> div{
+cursor:pointer;
 font-weight:bold;
 color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+@include background(linear-gradient(#9d02e2, #5a017f));
+@include bar_inner_base;
+position:relative;
+text-align:left;
+font-size:24px;
+}
+
+._icon_category {
+@include toggler_btn_icon3;
+@extend .sprites-white-plus;
+}
+
+._ditto{
+font-size:8px;
+color:#9401d5;
+font-weight:bold;
 border-bottom: #000;
 border-top: 1px solid #000;
 background: #320047;
 @include bar_inner_base;
 position:relative;
 text-align:left;
-font-size:24px;
-._icon_category {
-@include toggler_btn_icon3;
-@extend .sprites-white-plus;
+text-transform:uppercase;
+font-size:12px;
+> a {
+color:#9401d5;
+font-weight:bold;
 }
+
+._icon_subcategory {
+@include toggler_btn_icon2;
+@extend .sprites-white-arrow-right;
+}
+
 }
 }
 
@@ -34,6 +63,7 @@ font-size:24px;
 clear:both;
 margin-top:20px;
 }
+
 ._categoryfooter {
 color:#fff;
 border-bottom: #000;
@@ -51,14 +81,17 @@ cursor:pointer;
 text-align:left;
  position:relative;
  @include bar_inner_base;
+ 
  ._icon_category {
 @include toggler_btn_icon;
 @extend .sprites-white-plus;
 }
-}
 
 }
+}
+
 ._subcategoryfooter{
+
 > a{
 font-weight:bold;
 color:#fff;
@@ -68,25 +101,13 @@ background: #320047;
 @include bar_inner_base;
 position:relative;
 text-align:left;
+
 ._icon_subcategory {
 @include toggler_btn_icon2;
 @extend .sprites-white-arrow-right;
 }
-}
-}
 
-._ditto{
-font-size:8px;
-color:#9401d5;
-font-weight:bold;
-border-bottom: #000;
-border-top: 1px solid #000;
-background: #320047;
-@include bar_inner_base;
-position:relative;
-text-align:left;
-text-transform:uppercase;
-font-size:12px;
+}
 }
 
 ._section_title{
@@ -98,19 +119,20 @@ margin:0px;
 padding:15px;
 }
 
-
 ._shop{
 background:#fff;
 }
+
 ._rows{
 clear:both;
 border-top:5px solid #000;
 min-height:140px;
 }
-._item_image{
 
+._item_image{
 background:#fff;
 }
+
 ._item_image .field-content{
 position:relative;
 clear:both;
@@ -121,13 +143,16 @@ float:left;
 margin-right: 20px;
 min-height:75px;
 }
+
 ._item_title a{
 color:#666;
 }
+
 ._item_price {
 font-weight:bold;
 font-size:16px;
 }
+
 }
 
 ._paging{
