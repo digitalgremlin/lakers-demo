@@ -5,6 +5,7 @@ remove(".//br")
 table_dump(".//table")
 remove(".//div[@id='header']")
 remove(".//ul[contains(concat(' ', @class, ' '), ' uc-categories ')]")
+
 $$("#bottommenu"){
 add_class("_bottommenu")
 
@@ -31,6 +32,7 @@ $$("._ditto"){
 $$("._topnav"){
 inner("<div>")
 attribute("data-ur-set", "toggler")
+
 $$("div"){
 inject("Site Menu")
 attribute("data-ur-toggler-component", "button")
@@ -39,6 +41,7 @@ insert_bottom("span", class: "_icon_category")
 
 move_here("//div[contains(concat(' ', @class, ' '), ' _ditto ')]"){
 insert_bottom("span", class: "_icon_subcategory")
+
 wrap("span"){
 attribute("data-ur-toggler-component", "content")
 }
@@ -51,37 +54,46 @@ attribute("data-ur-toggler-component", "content")
 $$("#mainnav .content .menu"){
 remove("./li[contains(concat(' ', @class, ' '), ' leaf ')]")
 }
+
 $$("#shopcontent + *"){
 remove()
 }
+
 $$("#shop_menu"){
 remove()
 }
+
 $$(".promos"){
 remove()
 }
 
 $$(".view-content > div"){
+
 $$(".views-field-field-image-cache-fid"){
 add_class("_item_image")
 }
+
 $$(".views-field-title"){
 add_class("_item_title")
 move_to("..//div[@class='field-content']")
 }
+
 $$(".views-field-sell-price"){
 add_class("_item_price")
 move_to("..//div[@class='field-content']")
 }
+
 }
 
 
 $$("#shopcontent"){
 add_class("_shop")
 }
+
 $$(".views-row"){
 add_class("_rows")
 }
+
 $$(".item-list"){
 add_class("_paging")
 }
@@ -89,6 +101,7 @@ add_class("_paging")
 $$("#mainarea"){
 insert_after("div", class: "_clear")
 }
+
 $$("#mainbodysub .title"){
 add_class("_section_title")
 }
@@ -140,6 +153,8 @@ remove()
 $$(".productbox"){
 insert_after("div", class: "_clear")
 }
+
+
 
 }
 

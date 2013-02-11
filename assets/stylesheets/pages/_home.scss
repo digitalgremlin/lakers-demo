@@ -11,27 +11,29 @@ color:#fff;
 @include bar_inner_base;
 margin:0px !important;
 
- > a{
- position:relative;
- @include bar_inner_base;
- }
- 
- &[data-ur-toggler-component="button"]{ 
-  > div{
-   text-align:left;
- position:relative;
- @include bar_inner_base; 
- 
+> a{
+position:relative;
+@include bar_inner_base;
+}
+
+&[data-ur-toggler-component="button"]{ 
+
+> div{
+text-align:left;
+position:relative;
+@include bar_inner_base; 
+
  ._icon_category {
 @include toggler_btn_icon;
 @extend .sprites-white-plus;
 }
 
- }  
+}  
 }
 }
 
 ._subcategory{
+
 > a{
 font-weight:bold;
 color:#fff;
@@ -46,6 +48,7 @@ text-align:left;
 @include toggler_btn_icon2;
 @extend .sprites-white-arrow-right;
 }
+
 }
 }
 
@@ -56,21 +59,27 @@ border-top: 1px solid #000;
 @include background(linear-gradient(#5d5c58, #3a3937));
 @include bar_inner_base;
 margin:0px !important;
+
 > a{
  position:relative;
  @include bar_inner_base;
-} >div {
+}
+
+>div {
 text-align:left;
- position:relative;
- @include bar_inner_base;
- ._icon_category {
+position:relative;
+@include bar_inner_base;
+
+._icon_category {
 @include toggler_btn_icon;
 @extend .sprites-white-plus;
 }
-}
 
 }
+}
+
 ._subcategoryfooter{
+
 > a{
 font-weight:bold;
 color:#fff;
@@ -80,12 +89,15 @@ background: #320047;
 @include bar_inner_base;
 position:relative;
 text-align:left;
+
 ._icon_subcategory {
 @include toggler_btn_icon2;
 @extend .sprites-white-arrow-right;
 }
+
 }
 }
+
 ._listhome{
 list-style:none;
 padding:0px;

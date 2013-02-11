@@ -1,9 +1,9 @@
 header#mw_header {
-  height:99px;
-  position:relative;
-  background:#000;
- margin-bottom:5px;
-  
+height:99px;
+position:relative;
+background:#000;
+margin-bottom:5px;
+
 ._icons_bar{
 position: absolute;
 top: 21px;
@@ -42,22 +42,9 @@ position:relative;
 top:3px;
 cursor:pointer;
 }
-}
-} 
-
-.sprites-white-cart{
-
-
-} 
-
-.sprites-white-info{
-
-
-} 
-
-.sprites-white-search{
 
 }
+} 
 
 #mw_top{
 @include background(linear-gradient(#4d0b6c, #36074b)); 
@@ -68,9 +55,8 @@ position:absolute;
 top:0px;
 left:0px;
 }
+
 }
-
-
 
 #mw_info{
 position:relative;
@@ -83,10 +69,12 @@ top:-5px;
 left:193px;
 z-index:5;
 }
+
 }
 
 #mw_cart{
 position:relative;
+
 > a{
 color:#F2DD70;
 text-decoration:underline;
