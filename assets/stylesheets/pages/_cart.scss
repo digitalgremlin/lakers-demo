@@ -1,6 +1,6 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
-._content {
+._cart {
 background:#000;
 
 ._clear{
@@ -64,144 +64,15 @@ font-weight:bold;
 }
 }
 
-._product_head{
-padding:5px;
+#line-items-div{
 
-._item_title{
-margin-top:0px !important;
-font-size:16px;
-color:#666;
-text-align:left;
-}
-
-._item_price{
-color:#04af01;
-text-align:left;
-font-size:24px;
-margin-bottom:5px;
+.mw_was_table > div > div{
+text-align:center;
 }
 
 }
 
-
-._product_image {
-
-> a{
-color:#666;
-text-decoration:underline;
-
-> img{
-border:2px solid #666;
-width:200px;
-height:267px;
-}
-
-}
-
-._product_image + a{
-
-}
-}
-
-._meta{
-
-ul{
-list-style:none;
-text-align:left;
-
-li{
-color:#666;
-display:inline;
-
-a{
-color:#666;
-text-decoration:underline;
-}
-
-}
-}
-}
-
-._product_body{
-padding:5px;
-> p {
-text-align:left;
-}
-
-> ul {
-text-align:left;
-list-style-type:dash;
-}
-
-}
-
-._share{
-position:relative;
-border-top: 2px solid #000;
-text-align:left;
-padding-left:5px;
-color:#666;
-
-._share_bar{
-
-> div {
-display: inline-block;
-padding-top: 3px;
-margin-left:15px;
-height:27px;
-cursor:pointer;
-}
-
-._first{
-margin-left:0px;
-}
-
-}
-}
-
-._add_to_cart{
-padding:5px;
-
-> div {
-border-top:2px solid #000;
-border-bottom:2px solid #000;
-}
-.attributes{
-border-bottom:none;
-}
-}
-
-._get_low {
-text-align:left;
-padding:5px;
-
-> label{
-display:block;
-}
-
-> input{
-
-}
-}
-
-._get_down {
-text-align:left;
-padding:5px;
-
-> label{
-display:block;
-}
-
-> select{
-background:#000;
-color:#fff;
-width:150px;
-height:30px;
-font-weight:bold;
-}
-}
-
-._take_that{
+.form-submit{
 width:95%;
 height:50px;
 @include background(linear-gradient(#f7c935, #d6a105));
@@ -213,6 +84,14 @@ padding:5px;
 border:none;
 text-transform:uppercase;
 cursor:pointer;
+}
+
+#checkout-form-bottom{
+
+> .form-submit {
+display:block;
+}
+
 }
 
 ._categoryfooter {
@@ -241,7 +120,9 @@ text-align:left;
 
 }
 }
+
 ._subcategoryfooter{
+
 > a{
 font-weight:bold;
 color:#fff;
@@ -251,12 +132,23 @@ background: #320047;
 @include bar_inner_base;
 position:relative;
 text-align:left;
+
 ._icon_subcategory {
 @include toggler_btn_icon2;
 @extend .sprites-white-arrow-right;
 }
 
 }
+}
+
+#checkout-form-bottom{
+border-bottom:2px solid #000;
+}
+
+#edit-panes-delivery-delivery-country, 
+#edit-panes-billing-billing-country, 
+#edit-panes-comments-comments{
+width: 215px;
 }
 
 

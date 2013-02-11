@@ -1,0 +1,203 @@
+// Every page should have a class on the body
+// Scope that in each file at the start
+._catalog {
+background:#000;
+
+._clear{
+clear:both;
+}
+
+.menu{
+margin:0px !important;
+list-style:none !important;
+padding:0px;
+}
+
+._topnav{
+position:relative;
+
+> div{
+cursor:pointer;
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+@include background(linear-gradient(#9d02e2, #5a017f));
+@include bar_inner_base;
+position:relative;
+text-align:left;
+font-size:24px;
+}
+
+._icon_category {
+@include toggler_btn_icon3;
+@extend .sprites-white-plus;
+}
+
+._ditto{
+font-size:8px;
+color:#9401d5;
+font-weight:bold;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
+position:relative;
+text-align:left;
+text-transform:uppercase;
+font-size:12px;
+> a {
+color:#9401d5;
+font-weight:bold;
+}
+
+._icon_subcategory {
+@include toggler_btn_icon2;
+@extend .sprites-white-arrow-right;
+}
+
+}
+}
+
+._bottommneu{
+clear:both;
+margin-top:20px;
+}
+
+._categoryfooter {
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+@include background(linear-gradient(#5d5c58, #3a3937));
+@include bar_inner_base;
+padding:0px ;
+margin:0px !important;
+cursor:pointer;
+
+> a{
+ position:relative;
+ @include bar_inner_base;
+} >div {
+text-align:left;
+ position:relative;
+ @include bar_inner_base;
+ 
+ ._icon_category {
+@include toggler_btn_icon;
+@extend .sprites-white-plus;
+}
+
+}
+}
+
+._subcategoryfooter{
+
+> a{
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
+position:relative;
+text-align:left;
+
+._icon_subcategory {
+@include toggler_btn_icon2;
+@extend .sprites-white-arrow-right;
+}
+
+}
+}
+
+._shop{
+background:#fff !important;
+}
+
+._rows{
+clear:both;
+border-top:5px solid #000;
+min-height:140px;
+}
+
+._item_image{
+background:#fff;
+}
+
+._item_image .field-content{
+position:relative;
+clear:both;
+color:#666;
+
+.imagecache-product_list{
+float:left;
+margin-right: 20px;
+min-height:75px;
+}
+
+._item_title a{
+color:#666;
+}
+
+}
+
+#titlebar{
+background:#000;
+color: #9401D5;
+font-weight: bold;
+margin: 0;
+padding: 15px;
+text-transform: uppercase;
+font-size:24px;
+}
+
+.productbox{
+border-bottom:5px solid #000;
+min-height:150px;
+padding:5px;
+position:relative;
+
+.catalog-grid-title > a {
+color:#666;
+display:block;
+}
+
+.mw_was_table.mw_was_table{
+width:100% !important;
+}
+ 
+.uc-price {
+font-weight:bold;
+font-size:16px;
+display:block;
+color:#666;
+}
+
+.catalog-grid-image{
+float:left;
+margin-right: 20px;
+min-height:150px;
+width:120px;
+
+ a > img {
+height:70%;
+width:70%;
+float:left;
+}
+ 
+}
+
+form{
+display:none;
+}
+
+}
+
+._paging{
+display:none;
+clear:both;
+}
+
+
+
+}

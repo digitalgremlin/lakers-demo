@@ -1,15 +1,19 @@
-
 $$("body") {
-add_class("_category")
+
+add_class("_catalog")
 remove(".//br")
 table_dump(".//table")
 remove(".//div[@id='header']")
+remove(".//ul[contains(concat(' ', @class, ' '), ' uc-categories ')]")
 $$("#bottommenu"){
 add_class("_bottommenu")
+
 $$(" > div"){
 	add_class("_baller2")
 }
+
 }
+
 $$("#mainnav .content .menu .first"){
 attribute("class", "_topnav")
 }
@@ -131,6 +135,10 @@ move_to("//*[contains(concat(' ', @class, ' '), ' _other ')]")
 }
 $$("#bottom_col3"){
 remove()
+}
+
+$$(".productbox"){
+insert_after("div", class: "_clear")
 }
 
 }
