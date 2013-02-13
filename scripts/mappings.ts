@@ -34,6 +34,10 @@ match($status) {
 		log("--> Importing  pages/content.ts in mappings.ts")
 		@import "pages/content.ts"
 		}
+		with(/search/) {
+		log("--> Importing  pages/search.ts in mappings.ts")
+		@import "pages/search.ts"
+		}
 		with(/cart/) {
 		log("--> Importing  pages/cart.ts in mappings.ts")
 		@import "pages/cart.ts"
