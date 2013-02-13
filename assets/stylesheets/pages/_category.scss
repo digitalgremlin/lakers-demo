@@ -171,20 +171,23 @@ border-top:4px solid #000;
 
 >ul {
 list-style:none;
-margin:0px !important;
-padding:0px;
+margin:10px !important;
+padding:5px;
+height: 50px;
 > li {
 display: inline;
-height:20px;
-@include background(linear-gradient(#9d02e2, #5a017f)); 
-color:#fff; 
-@include bar_inner_base;
-border-top:2px solid #000;
+color:#9d02e2;
+height:50px !important;
+border:2px solid #9d02e2;
+padding:10px;
+background:#ccc;
+margin:10px;
 > a{
-color:#fff;
-font-size:18px;
+color:#9d02e2;
+font-size:24px;
 font-weight:bold;
-display:block;
+display:inline;
+background:#ccc;
 }
 }
 }

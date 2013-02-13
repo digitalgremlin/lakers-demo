@@ -38,7 +38,7 @@ insert("img", src: asset("images/tab_bar.jpg"))
 
 }
 
-$$(".container-inline"){
+$$("form#search-block-form"){
 attributes(data-ur-tabs-component: "content", data-ur-tab-id: "search")
 insert("span", class: "_search_tab"){
 insert("img", src: asset("images/tab_bar.jpg"))
