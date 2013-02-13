@@ -4,14 +4,17 @@ remove(".//br")
 table_dump(".//table")
 remove(".//div[@id='header']")
 
+$$("#shop_menu > div"){
+add_class("_baller1")
+}
 $$("#bottommenu"){
 add_class("_bottommenu")
 
 $$(" > div"){
 	add_class("_baller2")
 }
-
 }
+
 
 $$("#mainnav .content .menu .first"){
 attribute("class", "_topnav")
@@ -21,27 +24,40 @@ $$("#mainnav"){
 insert_after("div", class: "_ditto" )
 }
 
+
+
 $$("._ditto"){
- inject("<a href='/' >Shop Main </a> &nbsp;>>")
+ insert_javascript("breadcrumbs2();")
+ inject(">> ")
+
+}
+
+$$("#mainbodysub > h1:first-of-type"){
+copy_to("//div[contains(concat(' ', @class, ' '), ' _ditto')]")
+}
+
+
+$$("._ditto > h1"){
+name() {
+    set("span")
+  }
 }
 
 $$("._topnav"){
 inner("<div>")
 attribute("data-ur-set", "toggler")
 
-$$("div"){
+$$("div:first-of-type"){
 inject("Site Menu")
 attribute("data-ur-toggler-component", "button")
 insert_bottom("span", class: "_icon_category")
 }
 
-move_here("//div[contains(concat(' ', @class, ' '), ' _ditto ')]"){
-insert_bottom("span", class: "_icon_subcategory")
-wrap("span"){
+insert("div", class: "_main_menu_drop"){
 attribute("data-ur-toggler-component", "content")
 }
 
-}
+
 }
 
 $$("#mainnav .content .menu"){
@@ -52,9 +68,36 @@ $$("#shopcontent + *"){
 remove()
 }
 
+
 $$("#shop_menu"){
-remove()
+move_to("//div[contains(concat(' ', @class, ' '), ' _main_menu_drop')]")
+$$("._baller1") {
+attribute("data-ur-set", "toggler")
+
+$$("h2"){
+attributes(class: "_category_title", 
+data-ur-toggler-component: "button")
+wrap_text_children("div"){
+insert("span", class: "_icon_category")
 }
+
+}
+
+$$("ul") {
+	attribute("data-ur-toggler-component", "content")
+	
+$$("> li") {
+attribute("class", "_subcategory")
+
+$$("> a"){
+insert_bottom("span", class: "_icon_subcategory")
+}
+	
+}
+}
+}
+}
+
 
 $$(".promos"){
 remove()
@@ -89,6 +132,7 @@ add_class("_rows")
 $$(".item-list"){
 add_class("_paging")
 }
+
 
 $$("#mainarea"){
 insert_after("div", class: "_clear")

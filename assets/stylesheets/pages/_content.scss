@@ -18,7 +18,7 @@ padding:0px;
 ._topnav{
 position:relative;
 
-> div{
+> div:first-of-type{
 cursor:pointer;
 font-weight:bold;
 color:#fff;
@@ -31,9 +31,27 @@ text-align:left;
 font-size:24px;
 }
 
+._main_menu_drop{
+background: #000;
+padding-top:5px;
+
+}
 ._icon_category {
 @include toggler_btn_icon3;
 @extend .sprites-white-plus;
+}
+
+
+> a {
+color:#9401d5;
+font-weight:bold;
+}
+
+._icon_subcategory {
+@include toggler_btn_icon2;
+@extend .sprites-white-arrow-right;
+}
+
 }
 
 ._ditto{
@@ -48,18 +66,6 @@ position:relative;
 text-align:left;
 text-transform:uppercase;
 font-size:12px;
-
-> a {
-color:#9401d5;
-font-weight:bold;
-}
-
-._icon_subcategory {
-@include toggler_btn_icon2;
-@extend .sprites-white-arrow-right;
-}
-
-}
 }
 
 ._product_head{
@@ -68,7 +74,7 @@ padding:5px;
 ._item_title{
 margin-top:0px !important;
 font-size:16px;
-color:#666;
+color:#9401d5;
 text-align:left;
 }
 
@@ -138,6 +144,8 @@ border-top: 2px solid #000;
 text-align:left;
 padding-left:5px;
 color:#666;
+font-size:18px;
+font-weight:bold;
 
 ._share_bar{
 
@@ -175,10 +183,18 @@ padding:5px;
 
 > label{
 display:block;
+font-size:18px;
+font-weight:bold;
+color:#666;
 }
 
-> input{
-
+> select{
+width: 200px;
+height: 30px;
+font-size: 18px;
+font-wieght:bold;
+background:#000;
+color:#fff;
 }
 }
 
@@ -188,14 +204,18 @@ padding:5px;
 
 > label{
 display:block;
+font-size:18px;
+font-weight:bold;
+color:#666;
 }
 
-> select{
+> input{
 background:#000;
 color:#fff;
 width:150px;
 height:30px;
 font-weight:bold;
+font-size:18px;
 }
 
 }
@@ -203,15 +223,31 @@ font-weight:bold;
 ._take_that{
 width:95%;
 height:50px;
-@include background(linear-gradient(#f7c935, #d6a105));
+@include background(linear-gradient(#9d02e2, #5a017f));
 @include bar_inner_base;
 font-size:24px;
-color:#666;
+color:#fff;
 margin:5px auto 0;
-padding:5px;
+padding:10px;
 border:none;
 text-transform:uppercase;
 cursor:pointer;
+display:block;
+}
+
+._u_wish{
+width:95%;
+height:50px;
+@include background(linear-gradient(#9d02e2, #5a017f));
+@include bar_inner_base;
+font-size:24px;
+color:#fff;
+margin:5px auto 0;
+padding:10px;
+border:none;
+text-transform:uppercase;
+cursor:pointer;
+display:block;
 }
 
 ._categoryfooter {
@@ -259,6 +295,54 @@ text-align:left;
 }
 }
 
+ ._category{
+border-bottom: #000;
+border-top: 1px solid #000;
+@include background(linear-gradient(#9d02e2, #5a017f)); 
+color:#fff; 
+@include bar_inner_base;
+margin:0px !important;
+padding:0px;
+> a{
+position:relative;
+@include bar_inner_base;
+}
 
+&[data-ur-toggler-component="button"]{ 
+
+> div{
+text-align:left;
+position:relative;
+@include bar_inner_base; 
+cursor:pointer;
+
+ ._icon_category {
+@include toggler_btn_icon;
+@extend .sprites-white-plus;
+}
+
+}  
+}
+}
+
+._subcategory{
+
+> a{
+font-weight:bold;
+color:#fff;
+border-bottom: #000;
+border-top: 1px solid #000;
+background: #320047;
+@include bar_inner_base;
+position:relative;
+text-align:left;
+
+._icon_subcategory {
+@include toggler_btn_icon2;
+@extend .sprites-white-arrow-right;
+}
+
+}
+}
 
 }

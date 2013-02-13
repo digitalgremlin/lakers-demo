@@ -10,6 +10,7 @@ $$("#rightcolumn"){
 add_class("_hidden")
 }
 
+
 $$("#shop_menu > div"){
 
 add_class("_baller1")

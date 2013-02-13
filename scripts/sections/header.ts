@@ -26,6 +26,8 @@ wrap("span")
 
 }
 
+
+
 $$("#mw_logo"){
 insert("img", src: asset("images/logo.png"))
 }

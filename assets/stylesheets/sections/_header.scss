@@ -1,5 +1,5 @@
 header#mw_header {
-height:99px;
+min-height:50px;
 position:relative;
 background:#000;
 margin-bottom:5px;
@@ -30,9 +30,9 @@ position:relative;
 
 > span {
 width: 25px;
-height: 22px;
+height: 23px;
 display: inline-block;
-border-bottom:#8301bd 2px solid;
+border-bottom:#8301bd 3px solid;
 padding:3px;
 top:-6px;
 
@@ -61,6 +61,14 @@ left:0px;
 #mw_info{
 position:relative;
 
+> h2{
+border-bottom: #000;
+border-top: 1px solid #000;
+@include background(linear-gradient(#9d02e2, #5a017f)); 
+color:#fff; 
+@include bar_inner_base;
+margin:0px !important;
+}
 ._info_tab{
 background:#000;
 border:1px solid #000;
@@ -94,7 +102,6 @@ z-index:5;
 #mw_bottom{
 border-top:#8301bd 2px solid;
 border-bottom:#8301bd solid 2px;
-min-height:49px;
 z-index:4;
 
 ._search_tab{
@@ -112,12 +119,15 @@ font-weight:bold;
 text-align:left;
 padding:5px;
 font-size:14px;
+min-height:49px;
+border-top:#8301bd 2px solid;
 }
 
 ._search{
-position:absolute;
-bottom:10px;
-text-align:center;
+padding-top:10px;
+text-align:left;
+min-height:49px;
+position:relative;
 
 
 > div {
@@ -136,6 +146,7 @@ color:#da6afd;
 border-color:#000;
 border:none;
 padding-left:5px;
+margin-top:5px;
 }
 
 }
@@ -143,7 +154,7 @@ padding-left:5px;
 .form-submit{
 color:#fff;
 width:40px;
-height:25px;
+height:23px;
 border-radius: 5px;
 @include background(linear-gradient(#9d02e2, #5a017f));
 font-size:14px;
@@ -152,8 +163,8 @@ margin-left:5px;
 cursor:pointer;
 border:none;
 position:relative;
-bottom:-2px;
 display:inline;
+text-align:center;
 }
 
 }
