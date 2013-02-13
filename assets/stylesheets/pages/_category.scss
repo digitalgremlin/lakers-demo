@@ -173,21 +173,22 @@ border-top:4px solid #000;
 list-style:none;
 margin:10px !important;
 padding:5px;
-height: 50px;
+
 > li {
 display: inline;
 color:#9d02e2;
 height:50px !important;
 border:2px solid #9d02e2;
-padding:10px;
+padding:5px;
 background:#ccc;
 margin:10px;
 > a{
 color:#9d02e2;
-font-size:24px;
+font-size:12px;
 font-weight:bold;
 display:inline;
 background:#ccc;
+line-height: 35px;
 }
 }
 }
